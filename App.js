@@ -1,37 +1,32 @@
-// DurgaPoojaImage.js
+// Sure! Let's create a React component for the Gopal Pooja. You can customize the content and styles as needed.
 
 import React from 'react';
-import './DurgaPoojaImage.css'; // Import your CSS file
+import './GopalPooja.css'; // Import your CSS file
 
-const DurgaPoojaImage = () => {
-  // Sample data for Durga Pooja
-  const durgaPoojaData = {
-    title: 'Durga Pooja',
+const GopalPooja = () => {
+  // Sample data for Gopal Pooja
+  const gopalPoojaData = {
+    title: 'Gopal Pooja',
     description:
-      'Durga Puja, a vibrant Hindu festival, celebrates the victory of Goddess Durga over the demon Mahishasura. It symbolizes the triumph of good over evil. Devotees worship the ten-armed goddess with fervor and enthusiasm.',
-    price: '₹3500',
+      'Gopal Pooja celebrates the divine child form of Lord Krishna, known as Bal Gopal. It is believed to bring blessings for healthy children and protection for existing ones.',
+    price: '₹2500',
     benefits: [
-      'Invokes blessings for strength, courage, and protection.',
-      'Celebrates the divine feminine energy and empowerment.',
-      'Promotes unity, joy, and cultural heritage.',
+      'Blessings for healthy and happy children.',
+      'Protection for children up to the age of 12 years.',
+      'Removal of obstacles related to childbirth.',
     ],
     howItHappens: [
-      'Elaborate pandals (temporary structures) are set up.',
-      'Idols of Goddess Durga are beautifully adorned.',
-      'Chanting of mantras, cultural performances, and feasting occur.',
+      'Setting up a sacred space with Bal Gopal idol or photo frame.',
+      'Chanting of mantras and offering prayers.',
+      'Feasting and sharing sweets with family and friends.',
     ],
-    aboutGoddessDurga: [
-      'Goddess with ten arms, riding a lion or tiger.',
-      'Symbolizes power, courage, and compassion.',
-      'Defeats the buffalo demon Mahishasura.',
-    ],
-    postPoojaCelebrations: [
-      'Visiting pandals, enjoying cultural programs.',
-      'Exchanging greetings and sweets with loved ones.',
-      'Participating in processions and immersion of idols.',
+    aboutBalGopal: [
+      'Bal Gopal represents the playful and adorable child Krishna.',
+      'Devotees seek his blessings for parenthood and child welfare.',
+      'His divine energy brings joy and positivity to households.',
     ],
     whyBookWithUs: [
-      'Authentic rituals and experienced priests.',
+      'Authentic rituals and experienced pandits.',
       'Customized guidance and seamless arrangements.',
       'Ensures auspicious outcomes for devotees.',
     ],
@@ -44,19 +39,19 @@ const DurgaPoojaImage = () => {
   };
 
   return (
-    <div className="durga-pooja-container">
-      <h1>{durgaPoojaData.title}</h1>
-      <p>{durgaPoojaData.description}</p>
-      <p className="price">Price: {durgaPoojaData.price}</p>
+    <div className="gopal-pooja-container">
+      <h1>{gopalPoojaData.title}</h1>
+      <p>{gopalPoojaData.description}</p>
+      <p className="price">Price: {gopalPoojaData.price}</p>
       <button className="book-now-button" onClick={handleBookNowClick}>
         Book Now
       </button>
 
       {/* Benefits */}
       <div className="section">
-        <h2>Benefits of Durga Pooja:</h2>
+        <h2>Benefits of Gopal Pooja:</h2>
         <ul>
-          {durgaPoojaData.benefits.map((benefit, index) => (
+          {gopalPoojaData.benefits.map((benefit, index) => (
             <li key={index}>{benefit}</li>
           ))}
         </ul>
@@ -64,30 +59,20 @@ const DurgaPoojaImage = () => {
 
       {/* How It Happens */}
       <div className="section">
-        <h2>How Durga Pooja Happens:</h2>
+        <h2>How Gopal Pooja Happens:</h2>
         <ul>
-          {durgaPoojaData.howItHappens.map((step, index) => (
+          {gopalPoojaData.howItHappens.map((step, index) => (
             <li key={index}>{step}</li>
           ))}
         </ul>
       </div>
 
-      {/* About Goddess Durga */}
+      {/* About Bal Gopal */}
       <div className="section">
-        <h2>About Goddess Durga:</h2>
+        <h2>About Bal Gopal:</h2>
         <ul>
-          {durgaPoojaData.aboutGoddessDurga.map((fact, index) => (
+          {gopalPoojaData.aboutBalGopal.map((fact, index) => (
             <li key={index}>{fact}</li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Post-Pooja Celebrations */}
-      <div className="section">
-        <h2>Post-Pooja Celebrations:</h2>
-        <ul>
-          {durgaPoojaData.postPoojaCelebrations.map((celebration, index) => (
-            <li key={index}>{celebration}</li>
           ))}
         </ul>
       </div>
@@ -96,7 +81,7 @@ const DurgaPoojaImage = () => {
       <div className="section">
         <h2>Why Book With Us:</h2>
         <ul>
-          {durgaPoojaData.whyBookWithUs.map((reason, index) => (
+          {gopalPoojaData.whyBookWithUs.map((reason, index) => (
             <li key={index}>{reason}</li>
           ))}
         </ul>
@@ -105,4 +90,4 @@ const DurgaPoojaImage = () => {
   );
 };
 
-export default DurgaPoojaImage;
+export default GopalPooja;
