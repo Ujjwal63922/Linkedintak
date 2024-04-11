@@ -1,0 +1,81 @@
+/* GopalPooja.css */
+
+/* Overall container styling */
+.gopal-pooja-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Description paragraph */
+  p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Price display */
+  .price {
+    font-size: 18px;
+    color: #e74c3c;
+  }
+  
+  /* Button styling */
+  .book-now-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-now-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Section headings */
+  .section h2 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  /* List items */
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  /* Individual list items */
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 480px) {
+    .gopal-pooja-container {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  
